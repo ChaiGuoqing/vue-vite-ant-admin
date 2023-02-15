@@ -1,0 +1,36 @@
+@import "./color.scss";
+/* ant 全局样式 */
+// 表格表头样式
+.ant-table-thead > tr > th {
+  background: rgba(84, 116, 168, 0.08);
+}
+// 表格头的过滤样式
+.ant-table-thead > tr > th .anticon-filter,
+.ant-table-thead > tr > th .ant-table-filter-icon {
+  right: auto;
+}
+// 弹窗footer
+.ant-modal-footer > div {
+  display: flex;
+  flex-flow: row-reverse;
+  .ant-btn {
+    margin-left: 8px;
+  }
+}
+// 方法调起的弹窗底部按钮
+.ant-modal-confirm .ant-modal-confirm-btns {
+  display: flex;
+  flex-flow: row-reverse;
+  .ant-btn {
+    margin-left: 8px;
+  }
+}
+// 全局按钮
+.ant-btn {
+  border-radius: 4px;
+}
+
+.ant-btn-primary {
+  background: $--color-primary;
+  border-color: $--color-primary;
+}

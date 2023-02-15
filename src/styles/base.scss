@@ -1,0 +1,316 @@
+/* 全局样式 */
+
+/* 布局
+--------------------------- */
+.inline {
+  display: inline;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+/* Box Sizing */
+.box-border {
+  box-sizing: border-box;
+}
+
+.box-content {
+  box-sizing: content-box;
+}
+
+/* position 定位 */
+.static {
+  position: static;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.sticky {
+  position: sticky;
+}
+
+/* position 居中*/
+.position-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Top / Right / Bottom / Left 用于控制定位元素的位置的功能类。 */
+@for $i from 0 through 100 {
+  .top-#{$i} {
+    top: #{$i}px !important;
+  }
+  .right-#{$i} {
+    right: #{$i}px !important;
+  }
+  .bottom-#{$i} {
+    bottom: #{$i}px !important;
+  }
+  .left-#{$i} {
+    left: #{$i}px !important;
+  }
+}
+
+/* 弹性布局
+--------------------------- */
+/* Flex */
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-auto {
+  flex: auto;
+}
+
+.flex-none {
+  flex: none;
+}
+
+/* Flex Direction 控制 Flex 子项的方向的功能类 */
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-col-reverse {
+  flex-direction: column-reverse;
+}
+
+/* Flex Wrap 控制换行 */
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+/* flex水平垂直居中
+--------------------------- */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 盒对齐
+--------------------------- */
+/* Justify Content */
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+/* Align Items */
+.items-start {
+  align-items: flex-start;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+.items-center {
+  align-items: center;
+}
+
+/* 间距
+--------------------------- */
+/* 外边距、内边距 */
+@for $i from 0 through 100 {
+  @if $i % 2 == 0 or $i % 5 == 0 {
+    .m-#{$i} {
+      margin: #{$i}px !important;
+    }
+    .mt-#{$i} {
+      margin-top: #{$i}px !important;
+    }
+    .mr-#{$i} {
+      margin-right: #{$i}px !important;
+    }
+    .mb-#{$i} {
+      margin-bottom: #{$i}px !important;
+    }
+    .ml-#{$i} {
+      margin-left: #{$i}px !important;
+    }
+    .p-#{$i} {
+      padding: #{$i}px !important;
+    }
+    .pt-#{$i} {
+      padding-top: #{$i}px !important;
+    }
+    .pr-#{$i} {
+      padding-right: #{$i}px !important;
+    }
+    .pb-#{$i} {
+      padding-bottom: #{$i}px !important;
+    }
+    .pl-#{$i} {
+      padding-left: #{$i}px !important;
+    }
+  }
+}
+
+/* 尺寸
+--------------------------- */
+/* 宽度 */
+.w-full {
+  width: 100% !important;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+/* 高度 */
+.h-full {
+  height: 100% !important;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+@for $i from 0 through 300 {
+  @if $i % 2 == 0 or $i % 5 == 0 {
+    .w-#{$i} {
+      width: #{$i}px !important;
+    }
+    .h-#{$i} {
+      height: #{$i}px !important;
+    }
+    .lh-#{$i} {
+      line-height: #{$i}px !important;
+    }
+  }
+}
+
+/* 排版
+--------------------------- */
+/* 字体大小 */
+@for $i from 10 through 50 {
+  @if $i % 2 == 0 {
+    .font-#{$i} {
+      font-size: #{$i}px !important;
+    }
+  }
+}
+
+/* 字体粗细 */
+@for $i from 100 through 900 {
+  @if $i % 100 == 0 {
+    .font-w-#{$i} {
+      font-weight: #{$i} !important;
+    }
+  }
+}
+
+/* 文本对齐 */
+@each $member in left, center, right, justify {
+  .text-#{$member} {
+    text-align: #{$member} !important;
+  }
+}
+
+/* 文本装饰 */
+@each $member in underline, line-through, none {
+  .text-#{$member} {
+    text-decoration: #{$member} !important;
+  }
+}
+
+/* 文本转换 大写、小写、首字母大写 */
+@each $member in uppercase, lowercase, capitalize {
+  .#{$member} {
+    text-transform: #{$member} !important;
+  }
+}
+
+/* 文本透明度 */
+@for $i from 0 through 100 {
+  @if $i % 5 == 0 {
+    .text-opacity-#{$i} {
+      opacity: calc((#{$i} / 100)) !important;
+    }
+  }
+}
+
+/* 文本溢出 */
+.truncate,
+.text-line-1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 背景
+--------------------------- */
+/* 背景颜色不透明度 */
+@for $i from 0 through 100 {
+  @if $i % 5 == 0 {
+    .bg-opacity-#{$i} {
+      opacity: calc((#{$i} / 100)) !important;
+    }
+  }
+}
+
+/* 交互
+--------------------------- */
+/* 光标效果 */
+@each $member in auto, default, pointer, wait, text, move, not-allowed {
+  .cursor-#{$member} {
+    cursor: #{$member} !important;
+  }
+}

@@ -1,0 +1,111 @@
+html,
+body,
+ol,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+th,
+td,
+dl,
+dd,
+form,
+fieldset,
+legend,
+input,
+textarea,
+select {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+#app {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 14px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* layout主布局样式
+------------------------------- */
+.layout-container {
+  width: 100%;
+  height: 100%;
+
+  .layout-aside {
+    box-shadow: 2px 0 6px rgb(0 21 41 / 1%);
+    height: inherit;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden !important;
+  }
+  .layout-aside-light {
+    background: var(--bg-menu-light);
+  }
+  .layout-aside-dark {
+    background: var(--bg-menu-dark);
+  }
+
+  .layout-header {
+    height: var(--height-header);
+    line-height: var(--height-header);
+    background: var(--bg-header-light);
+    color: var(--color-header-light);
+    padding: 0;
+  }
+
+  .layout-main {
+    padding: var(--padding-layout-main);
+    margin: var(--padding-layout-main);
+    // width: 100%;
+    height: 96%;
+    overflow: auto;
+    background-color: #fff;
+  }
+}
+
+/* 颜色值
+------------------------------- */
+.color-primary {
+  color: var(--color-primary);
+}
+.color-success {
+  color: var(--color-success);
+}
+.color-warning {
+  color: var(--color-warning);
+}
+.color-danger {
+  color: var(--color-danger);
+}
+.color-info {
+  color: var(--color-info);
+}
+
+// 覆盖滚动条
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: #c8c8c8;
+}
+::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 1);
+  background-color: #c8c8c8;
+}

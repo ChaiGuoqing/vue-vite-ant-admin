@@ -1,0 +1,39 @@
+/* 全局常量
+------------------------------- */
+
+/* 交互颜色常量 */
+$--color-primary: #0062ff !default;
+$--color-success: #00A870 !default;
+$--color-warning: #ED7B2F !default;
+$--color-danger: #f56c6c !default;
+$--color-info: #909399 !default;
+
+/* layout颜色常量 */
+$--bg-menu-light: #fff;
+$--bg-menu-dark: #001529;
+$--active-menuItem: #409eff;
+
+$--bg-header-light: #fff;
+$--color-header-light: #666;
+
+$--bg-main: #eef0f5;
+
+
+/* 赋值给:root
+------------------------------- */
+:root {
+  --color-primary: #{$--color-primary};
+  --color-success: #{$--color-success};
+  --color-warning: #{$--color-warning};
+  --color-danger: #{$--color-danger};
+  --color-info: #{$--color-info};
+
+  --bg-menu-light: #{$--bg-menu-light};
+  --bg-menu-dark: #{$--bg-menu-dark};
+  --active-menuItem: #{$--active-menuItem};
+
+  --bg-header-light: #{$--bg-header-light};
+  --color-header-light: #{$--color-header-light};
+
+  --bg-main: #{$--bg-main};
+}

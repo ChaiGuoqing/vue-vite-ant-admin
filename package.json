@@ -1,0 +1,54 @@
+{
+  "name": "manager",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 4173"
+  },
+  "dependencies": {
+    "@ant-design/icons-vue": "^6.1.0",
+    "@wangeditor/editor": "^5.1.23",
+    "@wangeditor/editor-for-vue": "next",
+    "ant-design-vue": "^3.2.13",
+    "axios": "^1.1.2",
+    "cross-env": "^7.0.3",
+    "dayjs": "^1.11.6",
+    "docx-preview": "^0.1.14",
+    "element-china-area-data": "^5.0.2",
+    "html2canvas": "^1.4.1",
+    "js-cookie": "^3.0.1",
+    "jspdf": "^2.5.1",
+    "moment": "^2.29.4",
+    "nprogress": "^0.2.0",
+    "pinia": "^2.0.21",
+    "screenfull": "4.2.0",
+    "vue": "^3.2.38",
+    "vue-router": "^4.1.5"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.1.4",
+    "@vitejs/plugin-vue": "^3.2.0",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "eslint": "^8.22.0",
+    "eslint-plugin-vue": "^9.3.0",
+    "jsencrypt": "3.3.1",
+    "prettier": "^2.7.1",
+    "sass": "^1.49.9",
+    "sass-loader": "^12.6.0",
+    "unplugin-auto-import": "^0.11.2",
+    "unplugin-vue-components": "^0.22.9",
+    "vite": "^3.0.2",
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-svg-icons": "^2.0.1"
+  },
+  "description": "# 抽屉组件 DrawerAnt",
+  "main": ".eslintrc.js",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@10.67.78.240:9922/member/front/manager.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,25 @@
+/* 全局常量
+------------------------------- */
+
+/* layout常量 */
+$--height-header: 40px;
+// main内容区域padding
+$--padding-layout-main: 15px;
+
+#shadowWrap {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 10px 10px 0px rgba(202, 226, 249, 0.25);
+}
+
+#flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 赋值给:root
+------------------------------- */
+:root {
+  --height-header: #{$--height-header};
+  --padding-layout-main: #{$--padding-layout-main};
+}

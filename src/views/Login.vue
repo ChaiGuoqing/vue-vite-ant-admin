@@ -52,7 +52,6 @@
 import { loginGetCode } from "@/api/login";
 import { encrypt, decrypt } from "@/utils/jsencrypt";
 import Cookies from "js-cookie";
-// import { message } from "ant-design-vue";
 import useUserStore from "@/stores/modules/user";
 const userStore = useUserStore();
 
@@ -94,9 +93,7 @@ async function userLogin() {
   userStore
     .login(loginForm)
     .then(() => {
-      // router.replace("/user");
       router.push({ path: redirect.value || "/" });
-      // message.success("登录成功");
     })
     .catch((error) => {
       loading.value = true;

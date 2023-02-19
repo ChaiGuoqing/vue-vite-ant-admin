@@ -47,14 +47,11 @@ const defaultActive = computed(() => {
 });
 const onOpenChange = (openKeys) => {
   console.log(openKeys);
-  // if (openKeys && openKeys.length) {
-  //   state.openKeys = openKeys[openKeys.length - 1];
+  // const latestOpenKey = openKeys.find((key) => state.openKeys.indexOf(key) === -1);
+  // if (state.rootSubmenuKeys.indexOf(latestOpenKey) === -1) {
+  //   state.openKeys = openKeys;
+  // } else {
+  //   state.openKeys = latestOpenKey ? [latestOpenKey] : [];
   // }
-  const latestOpenKey = openKeys.find((key) => state.openKeys.indexOf(key) === -1);
-  if (state.rootSubmenuKeys.indexOf(latestOpenKey) === -1) {
-    state.openKeys = openKeys;
-  } else {
-    state.openKeys = latestOpenKey ? [latestOpenKey] : [];
-  }
 };
 </script>

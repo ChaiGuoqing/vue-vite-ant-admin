@@ -3,10 +3,10 @@
     <!-- <NavBar /> -->
     <div class="layout-navbar">
       <div class="navbar-left">
-        <!-- <span class="menu-icon" @click="onMenuIconClick">
+        <span class="menu-icon" @click="onMenuIconClick">
           <MenuUnfoldOutlined v-if="isCollapse" />
           <MenuFoldOutlined v-else />
-        </span> -->
+        </span>
         <BreadCrumb></BreadCrumb>
       </div>
       <div class="navbar-right">
@@ -18,18 +18,16 @@
   </a-layout-header>
 </template>
 <script setup>
-// import { MenuFoldOutlined, MenuUnfoldOutlined } from "@ant-design/icons-vue";
+import { MenuFoldOutlined, MenuUnfoldOutlined } from "@ant-design/icons-vue";
 import useSettingsStore from "@/stores/modules/themeConfig";
 // 获取布局配置信息
 const settingsStore = useSettingsStore();
 const isTagView = computed(() => settingsStore.isTagView);
-// const isCollapse = computed(() => settingsStore.isCollapse);
-// // 展开/收起左侧菜单点击
-// const onMenuIconClick = () => {
-//   console.log("1111111");
-//   const isCollapseClick = !isCollapse;
-//   settingsStore.setState({ key: "isCollapse", value: isCollapseClick });
-// };
+const isCollapse = computed(() => settingsStore.isCollapse);
+// 展开/收起左侧菜单点击
+const onMenuIconClick = () => {
+  settingsStore.isCollapse = !settingsStore.isCollapse;
+};
 </script>
 <style lang="scss" scoped>
 .h-90 {

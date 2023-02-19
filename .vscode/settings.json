@@ -1,0 +1,48 @@
+{
+  "files.autoSave": "onFocusChange",
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[less]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "volar.doctor.statusBarItem": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "git.mergeEditor": true,
+  "git.enableSmartCommit": true,
+  "window.commandCenter": false,
+  "gitlens.views.contributors.showStatistics": true,
+  "gitlens.views.contributors.files.layout": "list",
+  "gitlens.views.contributors.showAllBranches": true,
+  // "gitlens.currentLine.enabled": false,
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.showWhatsNewAfterUpgrades": false,
+  "gitlens.showWelcomeOnInstall": false,
+  "gitlens.hovers.enabled": false,
+}

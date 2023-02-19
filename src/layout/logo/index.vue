@@ -1,21 +1,10 @@
 <template>
-  <!--   <div class="layout-logo" v-if="themeConfig.isLogo"> -->
   <div class="layout-logo">
-    <div class="title">OA管理平台</div>
-    <!-- <img src="@/assets/images/logo.svg" class="layout-logo-medium-img" /> -->
+    <div class="title">管理平台</div>
   </div>
 </template>
 
-<script setup>
-// import { computed } from "vue";
-// import { useStore } from "@/stores/index";
-
-// const store = useStore();
-// 获取布局配置信息
-// const themeConfig = computed(() => {
-//   return store.state.themeConfig;
-// });
-</script>
+<script setup></script>
 
 <style scoped lang="scss">
 .layout-logo {

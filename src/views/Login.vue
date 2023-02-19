@@ -2,10 +2,10 @@
   <div class="login-warp">
     <div class="text-warp">
       <div class="text-warp-header">
-        <img src="@/assets/img/login_logo.png" alt="" />
+        <!-- <img src="@/assets/img/login_logo.png" alt="" /> -->
         <div class="text-warp-header-text">登录</div>
       </div>
-      <img class="text-warp-mid-img" src="@/assets/img/logo_name.png" alt="" />
+      <!-- <img class="text-warp-mid-img" src="@/assets/img/logo_name.png" alt="" /> -->
       <div class="text-warp-mid-text">Integrated security management platform</div>
       <div class="text-warp-bottom-text">
         <div>Video Monitoring</div>
@@ -14,7 +14,7 @@
       </div>
     </div>
     <div class="login-box-warp">
-      <div class="login-box-warp-header">Hi，欢迎登录ZXICE综合安防管理平台</div>
+      <div class="login-box-warp-header">Hi，欢迎登录管理平台</div>
       <a-form ref="formRef" :model="loginForm" :rules="loginRules">
         <a-form-item name="username">
           <a-input placeholder="请输入用户名" v-model:value="loginForm.username" allowClear>
@@ -42,9 +42,7 @@
       </a-button>
     </div>
     <div class="login-warp-footer">
-      <div class="login-warp-footer-text">
-        Copyright© 2022-2023 中星智慧云企（山东）科技有限责任公司 版权所有&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;鲁ICP备15041027号-2
-      </div>
+      <div class="login-warp-footer-text">Copyright© 2022-2023 版权所有&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</div>
     </div>
   </div>
 </template>
@@ -128,9 +126,10 @@ getCookie();
 .login-warp {
   width: 100vw;
   height: 100vh;
-  background: url("@/assets/img/login_background.png");
-  background-repeat: no-repeat;
+  // background: url("@/assets/img/login_background.png");
+  // background-repeat: no-repeat;
   background-size: 100% 100%;
+  background-color: #1a43f4;
   position: relative;
   .text-warp {
     color: #ffffff;
